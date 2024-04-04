@@ -24,8 +24,6 @@
     </style>
 </head>
 <body>
-    <p>URL: http://test.com/?<span id="params"></span></p>
-	<p><input placeholder="Enter URL params" /></p>
 	<pre id="results">{}</pre>
 
 	 <script>
@@ -43,7 +41,7 @@
 	      var paramValue = typeof (a[1]) === 'undefined' ? true : a[1];
 
 	      paramName = paramName.toLowerCase();
-	      if (typeof paramValue === 'string') paramValue = paramValue.toLowerCase();
+	      if (typeof paramValue === 'string') paramValue = paramValue;
 
 	      if (paramName.match(/\[(\d+)?\]$/)) {
 	        var key = paramName.replace(/\[(\d+)?\]/, '');
