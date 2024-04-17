@@ -17,7 +17,7 @@
         </div>
         <script>
             function removeLoading() {
-                if (document.getElementsByTagName("iframe").length > 0) {
+                if (document.getElementById("panel-container") !== null) {
                     console.log("found")
                     document.getElementById("my-loader").remove();
                 } else {
