@@ -1,21 +1,10 @@
 <head>
-    <title>Query parameters test</title>
+    <title>Deep link redirect test</title>
     <style>
-	        body {
+	    body {
 		  padding: 10px;
 		  background: green;
 		}
-
-		input {
-		  width: 500px;
-		  padding: 12px 20px;
-		  margin: 8px 0;
-		  display: inline-block;
-		  border: 1px solid #ccc;
-		  border-radius: 4px;
-		  box-sizing: border-box;
-		}
-
 		p {
 		  font-size: 18px;
 		  line-height: 28px;
@@ -25,16 +14,14 @@
     </style>
 </head>
 <body>
-  <div>
-    <a href="https://www.investing.com/apps/?screen=pro_lp&feature=fair_value">LP</a>
-  </div>
-	<pre id="results">{}</pre>
-
+  <p>
+    Please wait.....
+  </p>
 	 <script>
 
      setTimeout(function() {
-      document.location.href = "https://www.investing.com/apps/?screen=pro_lp&feature=fair_value"
-     }, 1000)
+      document.location.href = "market://details?id=com.fusionmedia.investing"
+     }, 500)
      
     </script>
 </body>
